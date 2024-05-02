@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Rupees</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index">
+            <span>
+              Rupees
+            </span>
+          </a>
+
+          <div class="navbar-collapse" id="">
+            <div class="user_option">
+
+            </div>
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <!--<a href="/">Home</a>
+                <a href="about">About</a>
+                <a href="register">Registration</a>
+                <a href="login">Login</a>
+                <a href="/userhome">Userhome</a>
+                -->
+                <a href="/">logout</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding2-top layout_padding-bottom ">
+    <div class="container-fluid">
+      <div class="row">
+        <h2 class="custom_heading text-center" style="
+    width: 1000px;
+    height: 50px;
+">
+          RESULT
+        </h2>
+      </div>
+      <center>
+
+        <!-- <h1 style="color: aliceblue;"><b>Result</b></h1> -->
+
+
+        <div class="col-md-6">
+
+
+
+
+          <img src="/{{path1}}" width="250" height="250" />
+
+          <br>
+          <h2 style="color: black;">{{result}}</h2>
+          <div><b>
+              <ul style="color:rgb(206, 91, 14); text-justify: auto; text-transform: capitalize;">
+            </b>
+            <strong>{% for x in msg %}</strong>
+            <li>{{ x }}</li>
+            {% endfor %}
+            </ul>
+          </div>
+
+          <style>
+            .button {
+              border: none;
+              color: black(255, 255, 255);
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+
+            .button1 {
+              background-color: white;
+              border:5px black;
+
+            }
+
+            /* Green */
+            .button2 {
+              background-color: #008CBA;
+            }
+
+            /* Blue */
+          </style>
+          </head>
+
+          <body>
+            <button class="btn btn-outline-primary"><a href="/upload" >Predict again</a></button>
+            <button class="btn btn-outline-success"><a href="/home">Go to Home  Page</a></button>
+
+
+            <!---<button class="btn btn-primary"><a href="/upload" >Predict again</a></button>--->
+            <!---<button class="btn btn-primary"><a href="/home">Go to Home  Page</a>--->
+
+      </center>
+    </div>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- footer section -->
+  <!-- <footer class="container-fluid footer_section">
+
+  </footer> -->
+  <!-- footer section -->
+
+  <script src="static/js/jquery-3.4.1.min.js"></script>
+  <script src="static/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>ruppees</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Ruppees
+            </span>
+          </a>
+
+          <div class="navbar-collapse" id="">
+            <div class="user_option">
+              <!-- <a href="">
+                Login
+              </a> -->
+            </div>
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1"> </span>
+                <span class="s-2"> </span>
+                <span class="s-3"> </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/">Home</a>
+                <a href="about">About</a>
+                <a href="register">Registration</a>
+                <a href="login">Login</a>
+                <!--<a href="/userhome">Userhome</a>
+                -->
+                <!-- <a href="#">Login</a> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Request To Register
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="form_container">
+            <form class="row g-3" action="/register" method="post">
+              {% csrf_token %}
+              <!-- <center>
+                  <p style="color: white(0, 0, 0);">{{msg}}</p>
+              </center> -->
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg" style="color:whitesmoke;">Your
+                    Name</label>
+                  <input type="text" name="name" id="form3Example1cg" class="form-control" placeholder="Your Name" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3cg" style="color: whitesmoke;">Your
+                    Email</label>
+                  <input type="email" name="email" id="form3Example3cg" class="form-control" placeholder="Your Email" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cg" style="color: whitesmoke;">Password</label>
+                  <input type="password" name="password" id="form3Example4cg" class="form-control"
+                    placeholder="Password" />
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg" style="color: whitesmoke;">Repeat your
+                    password</label>
+                  <input type="password" name="conpassword" id="form3Example4cdg" class="form-control"
+                    placeholder="Repeat your Password" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg" style="color: whitesmoke;">Age</label>
+                  <input type="number" name="Age" id="form3Example4cdg" class="form-control" placeholder="Age" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg" style="color: whitesmoke;">contact</label>
+                  <input type="number" name="contact" pattern="[0-9]{10}" id="form3Example4cdg" class="form-control"
+                    placeholder="contact" required />
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <center> <button type="submit" class="btn btn-success">Register</button></center>
+              </div>
+              <h1>{{msg}}</h1>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contact_items">
+
+
+
+        <script src="static/js/jquery-3.4.1.min.js"></script>
+        <script src="static/js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+        </script>
+        <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>
